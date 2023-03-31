@@ -78,7 +78,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'tickit',
-        'USER': 'tickituser',
+        'USER': 'tickituser1',
         'PASSWORD': 'tickit',
         'HOST': 'localhost'
     }
