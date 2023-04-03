@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
+import logo from '../assets/logo.png'
+import events from "../assets/events.png"
+
 
 export default function Nav(){
     return (
-<section>
-<Link to="/"><button> Tick-iT </button></Link>
-<Link to="/venues"><button>Venues</button></Link>
-<Link to="/events"><button>Events</button></Link>
+<section style={{background: 'black', border: '2px solid black', padding: '10px', display: 'inline-block', alignItems: 'center'}}>
+<Link to="/"><img style={{maxHeight: '30px'}} src={logo}/></Link>
+<Link to="/events"><img style={{maxHeight: '30px'}} src={events}/></Link>
 </section>
     )
 }

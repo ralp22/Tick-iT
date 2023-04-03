@@ -8,8 +8,6 @@ import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 
 
-
-
 function App() {
 
   const [ venues, setVenues ] = useState(null)
@@ -34,7 +32,6 @@ function App() {
 
   return (
     <div className="App">
-      
      <h1> Tick-iT </h1>
     <Nav/>
     <Main/>
