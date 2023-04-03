@@ -6,11 +6,14 @@ The goal of this project is to create a functoning web based application using D
 - Our application will also have full CRUD for at least one of our models.
 
 ## ERD
-![](ERD.png)
+![](./assets/ERD.png)
 
 ## Component Hierarchy Diagram
-![](CHD.png)
+![](./assets/CHD.png)
 
 ## Wireframes
-![](wireframe1.png)
-![](wireframe2.png)
+![](./assets/wireframe1.png)
+![](./assets/wireframe2.png)
+
+## Stretch-Goal
+- Stretch bar to be able to search for different Cities and States 
