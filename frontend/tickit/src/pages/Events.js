@@ -3,10 +3,7 @@ import logo from '../assets/event.png'
 import Carousel, { CarouselItem } from "../Carousel"
 
 export default function Events(props){
-
-    console.log(props.events[1].name)
-
-    return (
+    return props.events? (
         <div className="event-page">
             <img src={logo}/>
             <Nav/>
@@ -23,5 +20,5 @@ export default function Events(props){
                 }
             </Carousel>
         </div>
-    )
+    ) : <h1>Loading . . . </h1>
 }

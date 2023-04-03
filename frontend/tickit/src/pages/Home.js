@@ -3,7 +3,7 @@ import logo from "../assets/venue.png"
 import Carousel, { CarouselItem } from "../Carousel"
 
 export default function Venues(props){
-    return (
+    return props.venues ? (
         <div className="home-page">
             <img src={logo}/>
             <Nav/>
@@ -20,5 +20,5 @@ export default function Venues(props){
                 }
             </Carousel>
         </div>
-    )
+    ) : <h1>Loading . . . </h1>
 }
