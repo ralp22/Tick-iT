@@ -1,6 +1,9 @@
 import './App.css';
 import Nav from './components/Nav'
 import Main from "./components/Main"
+
+import Carousel, { CarouselItem } from "./Carousel"
+
 import axios from 'axios' 
 import React, { useState, useEffect } from 'react'
 
@@ -15,6 +18,7 @@ import React, { useState, useEffect } from 'react'
 //    }  
 // })
 
+>>>>>> main
 
 
 function App() {
@@ -41,9 +45,14 @@ function App() {
 
   return (
     <div className="App">
-      <h1> Tick-iT </h1>
+     <h1> Tick-iT </h1>
     <Nav/>
     <Main/>
+    <Carousel>
+        <CarouselItem> Item 1 </CarouselItem>
+        <CarouselItem> Item 2 </CarouselItem>
+        <CarouselItem> Item 3 </CarouselItem>
+      </Carousel>
     </div>
   );
 }
