@@ -7,15 +7,7 @@ import Carousel, { CarouselItem } from "./Carousel"
 import axios from 'axios' 
 import React, { useState, useEffect } from 'react'
 
-// const Axios = axios.create({
-//   baseURL: `${BASE_URL}`,
-//   timeout: 1000,
 
-//   headers: { 
-//       'Content-Type': 'application/json',
-//       'Access-Control-Allow-Origin': '*'
-//    }  
-// })
 
 
 function App() {
