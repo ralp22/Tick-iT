@@ -19,6 +19,17 @@ export default function Venues(props){
                     ))
                 }
             </Carousel>
+            <div className="grid">
+                {props.venues.map((venue) => (
+                    <div className="card">
+                    <img src={venue.photo_url}/>
+                    <div className="banner">
+                    <p>{venue.name}</p>
+                    <p>{venue.location}</p>
+                    </div>
+                    </div>
+                ))}
+            </div>
         </div>
     ) : <h1>Loading . . . </h1>
 }
