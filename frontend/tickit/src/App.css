@@ -20,14 +20,14 @@
 }
 
 .card-img {
-  height: 20vh;
-  width: 100%;
-  object-fit: cover;
+  max-height: 20vh;
+  min-width: fill;
+  object-fit: stretch;
 }
 
 .carousel-img {
-  max-height: 10vh;
-  width:max-content;
+  height: 40vh;
+  width: auto;
 }
 
 .grid {
@@ -40,6 +40,7 @@
 .card {
   max-height: 33vh;
   max-width: 33vw;
+  padding-bottom: 5%;
 }
 
 .banner {

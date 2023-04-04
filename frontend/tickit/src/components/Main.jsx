@@ -3,6 +3,8 @@ import axios from 'axios'
 import {useState,useEffect} from 'react'
 import Events from "../pages/Events"
 import Venues from "../pages/Home"
+import VenuePage from '../pages/VenuePage'
+import EventPage from '../pages/EventPage'
 
 
 export default function Main(){
@@ -36,6 +38,12 @@ export default function Main(){
             venues={venues}
             events={events}
             />}></Route>
+            <Route path="/venues/:id" element={<VenuePage 
+            venues={venues}
+            events={events}/>}></Route>
+            <Route path="/events/:id" element={<EventPage 
+            venues={venues}
+            events={events}/>}></Route>
         </Routes>
     )
 }
