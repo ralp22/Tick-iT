@@ -1,17 +1,28 @@
 import Nav from "../components/Nav"
-import logo from "../assets/venue.png"
+import logo from "../assets/venue2.png"
 import Carousel, { CarouselItem } from "../Carousel"
+import { useNavigate } from "react-router-dom"
 
 export default function Venues(props){
+
+    let navigate = useNavigate()
+
+    const showVenue = (id) => {
+    navigate(`/venues/${id}`)
+    }
+    const showEvent = (id) => {
+    navigate(`/events/${id}`)
+    }
+
     return props.venues && props.events ? (
         <div className="home-page">
-            <img className="tickit-logo" src={logo}/>
+            <img className="tickit-logo2" src={logo}/>
             <Nav/>
             <Carousel>
                 {
-                    props.events.map((event)=>(
+                    props.events.map((event, id)=>(
                         <CarouselItem>
-                            <div>
+                            <div onClick={()=>{showEvent(id)}}>
                             <img className="carousel-img" src={event.image_url}/>
                             <h1>{event.name}</h1>
                             </div>
@@ -20,8 +31,8 @@ export default function Venues(props){
                 }
             </Carousel>
             <div className="grid">
-                {props.venues.map((venue) => (
-                    <div className="card">
+                {props.venues.map((venue, id) => (
+                    <div onClick={()=>{showVenue(id)}} className="card">
                     <img className="card-img" src={venue.photo_url}/>
                     <div className="banner">
                     <div className="venue-info">
@@ -33,5 +44,5 @@ export default function Venues(props){
                 ))}
             </div>
         </div>
-    ) : <h1>Loading . . . </h1>
+    ) :  <h2 className="loading">Loading . . . </h2>
 }
