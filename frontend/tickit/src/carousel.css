@@ -4,7 +4,7 @@
 
 .inner { 
     white-space: nowrap;
-    transition: transform 0.3s;
+    transition: transform 1s;
 }
 
 .carousel-item {
@@ -26,6 +26,6 @@
 }
 
 indicators > button.active {
-    bachground-color: black; 
+    background-color: black; 
     color: #fff;
 }
