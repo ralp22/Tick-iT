@@ -5,7 +5,7 @@ import Carousel, { CarouselItem } from "../Carousel"
 export default function Venues(props){
     return props.venues ? (
         <div className="home-page">
-            <img src={logo}/>
+            <img className="tickit-logo" src={logo}/>
             <Nav/>
             <Carousel>
                 {
