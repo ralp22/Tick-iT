@@ -19,24 +19,39 @@
   align-items: center;
 }
 
-img {
-  max-height: 25vh;
-  max-width: 25vw
+.card-img {
+  height: 20vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-img {
+  max-height: 10vh;
+  width:max-content;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20%;
+  grid-gap: 7.5%;
   margin-top: 10%;
 }
 
 .card {
-
+  max-height: 33vh;
+  max-width: 33vw;
 }
 
 .banner {
+  color: aliceblue;
+  margin-top: -20px;
+  background: linear-gradient(180deg, #000000 0%, #414141 100%);
+}
 
+.venue-info {
+  padding-top: 0.75vh;
+  padding-bottom: 0.25vh;
+  font-weight: bold;
 }
 
 .tickit-logo{
