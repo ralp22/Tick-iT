@@ -56,7 +56,15 @@
 
 .tickit-logo{
   animation: fade 2.5s ease-in;
+  width: 20%;
+  padding-left: 12px;
 }
+
+.tickit-logo2{
+  animation: fade 2.5s ease-in;
+  width: 20%;
+}
+
 
 @keyframes fade {
   0% {
