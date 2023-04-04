@@ -29,8 +29,13 @@ export default function Main(){
 
     return (
         <Routes>
-            <Route path="/" element={<Venues venues={venues}/>}></Route>
-            <Route path="/events" element={<Events events={events}/>}></Route>
+            <Route path="/" element={<Venues 
+            venues={venues}
+            events={events}/>}></Route>
+            <Route path="/events" element={<Events 
+            venues={venues}
+            events={events}
+            />}></Route>
         </Routes>
     )
 }
