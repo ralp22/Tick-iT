@@ -1,6 +1,9 @@
 .App {
   text-align: center;
   background: #262629;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
 }
 
 .event-page {
@@ -19,4 +22,19 @@
 img {
   max-height: 25vh;
   max-width: 25vw
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20%;
+  margin-top: 10%;
+}
+
+.card {
+
+}
+
+.banner {
+
 }
