@@ -3,6 +3,7 @@ import Events from "./pages/Events"
 import Venues from "./pages/Home"
 import VenuePage from './pages/VenuePage'
 import EventPage from './pages/EventPage'
+import LoginPage from './pages/LoginPage'
 import axios from 'axios' 
 import React, { useState, useEffect } from 'react'
 import {Route, Routes} from 'react-router-dom'
@@ -45,6 +46,7 @@ function App() {
             <Route path="/events/:id" element={<EventPage 
             venues={venues}
             events={events}/>}></Route>
+            <Route path="/login" element={<LoginPage/>}></Route>
         </Routes>
     </div>
   );

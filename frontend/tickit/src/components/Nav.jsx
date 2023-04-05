@@ -23,6 +23,9 @@ export default function Nav() {
       <Link to="/events">
         <img style={{ maxHeight: "30px" }} src={events} />
       </Link>
+      <Link to="/login">
+        <button>Log In</button>
+      </Link>
     </section>
   );
 }
