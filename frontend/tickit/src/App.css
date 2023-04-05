@@ -4,6 +4,7 @@
   height: 100vh;
   width: 100vw;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .event-page {
@@ -17,12 +18,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.card-img {
-  height: 20vh;
-  width: 400px;
-  object-fit: stretch;
 }
 
 .event-shadow {
@@ -42,12 +37,13 @@
 }
 
 .venue-events-rows {
+  background: black;
   font-family: "Arial";
   font-weight: bold;
   letter-spacing: 1px;
-  font-size: 13px;
+  font-size: 16px;
   color: white;
-  border: 2px solid black;
+  border: 2px solid #FFBD59;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
@@ -60,6 +56,14 @@
   color: #FFBD59;
 }
 
+.venue-event-card {
+  border: 2px solid #FFBD59;
+}
+
+.venue-event-card:hover *{
+  background:#0e0e0f;
+}
+
 .carousel-img {
   height: 40vh;
   width: auto;
@@ -69,7 +73,6 @@
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 7.5%;
   margin-top: 10%;
 }
 
@@ -77,6 +80,24 @@
   height: 20%;
   width: 30%;
   padding-bottom: 5%;
+  margin-right: 7vw; 
+  margin-left: 7vw;
+}
+
+.card-img {
+  height: 20vh;
+  width: 400px;
+  object-fit: stretch;
+  box-shadow: 0 2px 12px white;
+}
+
+.card-img:hover {
+  box-shadow: 0 2px 12px #FFBD59;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .banner {
@@ -84,6 +105,7 @@
   color: aliceblue;
   margin-top: -20px;
   background: linear-gradient(180deg, #000000 0%, #414141 100%);
+  box-shadow: 0 2px 12px white;
 }
 
 .venue-info {
@@ -143,8 +165,11 @@
   text-shadow: 0 2px 12px #FFBD59;
   line-height: 10%;
 }
+
 .venue-backdrop-header {
-  width: 100vw;
+  align-self: center;
+  height: 800px;
+  width: 80%;
 }
 
 .details-container {
@@ -171,4 +196,5 @@
   transform: scale(1.25);
   background: #FFBD59;
   color: black;
+  cursor: pointer;
 }
