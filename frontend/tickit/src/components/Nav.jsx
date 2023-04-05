@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import events from "../assets/events.png";
+import login from "../assets/login.png"
 
 export default function Nav() {
   return (
@@ -24,7 +25,7 @@ export default function Nav() {
         <img style={{ maxHeight: "30px" }} src={events} />
       </Link>
       <Link to="/login">
-        <button>Log In</button>
+      <img style={{ maxHeight: "30px" }} src={login} />
       </Link>
     </section>
   );
