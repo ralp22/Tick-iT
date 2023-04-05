@@ -37,26 +37,34 @@ export default function VenuePage(props) {
         <div className="venue-page">
             <img className="tickit-logo" src={logo}/>
             <Nav/>
-            <img className="venue-backdrop" src={venues.photo_url}/>
+            <img className="venue-backdrop-header" src={venues.photo_url}/>
             <section className="details-container">
             <h1><span style={{color: 'white'}}>{venues.name}</span></h1>
             <h1>{venues.location}</h1>
-            <h1>Max. Occupancy: <span style={{color: '#FFBD59'}}>{venues.occupancy}</span></h1>
+            <h5>Max. Occupancy: <span style={{color: '#FFBD59'}}>{venues.occupancy}</span></h5>
             </section>
 
-            <section>
-                <h1>Venue Events</h1>
+            <section className='venue-events'>
+                {/* <h1>Venue Events</h1> */}
                 {
                     (venueEvents) ?
                     <div> {
                     venueEvents.map((event)=>{
                         
                         return (
-                        <div>
-                            <h1>{event.name}</h1>
-                            <h1>{event.artist}</h1>
-                            <h1>{event.date}</h1>
-                            <h1>{event.price}</h1>
+                        <div className='venue-events-rows'>
+                            <p>{event.artist}</p>
+                            <div className='div-image'>
+                            <img className='venue-events-img' src={event.image_url}/>
+                            </div>
+                            <p>{event.price}</p>
+                            <p>{event.date}</p>
+                            
+                            <p><span className='event-shadow'>{event.name}
+                            </span></p>
+                            <p>Available Tickets: {event.tickets_available}</p>
+                            
+                            
                         </div>)
                         })
                     } </div> : null
