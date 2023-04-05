@@ -198,3 +198,26 @@
   color: black;
   cursor: pointer;
 }
+
+.login-form-container {
+  margin-top: 5%;
+  transform: scale(1.5)
+}
+
+.email-label,.password-label {
+  font-family: 'Inter';
+  color: white;
+  text-shadow: 0 2px 12px #FFBD59;
+}
+
+.login-button {
+  background: #FFBD59;
+  box-shadow: 0 2px 6px #FFBD59;
+  color: white;
+  font-weight: bold;
+}
+
+.login-button:hover {
+  cursor: pointer;
+  
+}
