@@ -128,6 +128,21 @@
   align-items: center;
 }
 
+.event-backdrop {
+  width: 100vw;
+}
+
+.event-details-container {
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: fit-content;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  text-shadow: 0 2px 12px #FFBD59;
+  line-height: 10%;
+}
 .venue-backdrop-header {
   width: 100vw;
 }
@@ -135,7 +150,6 @@
 .details-container {
   color: white;
   background-color: black;
-  /* border-radius: 2rem; */
   width: 100%;
   height: fit-content;
   font-size: 10px;
@@ -143,6 +157,18 @@
   flex-direction: column;
   text-shadow: 0 2px 12px #FFBD59;
   line-height: 10%;
-  
-  
+}
+
+.ticket-button {
+  border-radius: .25rem;
+  box-shadow: 0 2px 12px #FFBD59;
+  margin: 10px;
+  background: black;
+  color: white;
+}
+
+.ticket-button:hover {
+  transform: scale(1.25);
+  background: #FFBD59;
+  color: black;
 }
