@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Nav from '../components/Nav'
+import logo from "../assets/logo.png";
 
 const LoginPage = (props) => {
   let navigate = useNavigate()
@@ -23,10 +24,11 @@ const LoginPage = (props) => {
   return ( 
     <div>
       <Nav/>
+      <img className='tickit-logo' src={logo}/>
       <div>
-        <form onSubmit={handleSubmit}>
+        <form className='login-form-container' onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="email">Email</label>
+            <label className='email-label' htmlFor="email">Email</label>
             <input
               onChange={handleChange}
               name="email"
@@ -37,7 +39,7 @@ const LoginPage = (props) => {
             />
           </div>
           <div>
-            <label htmlFor="passwordInput">Password</label>
+            <label className='password-label' htmlFor="passwordInput">Password</label>
             <input
               onChange={handleChange}
               type="password"
@@ -46,8 +48,8 @@ const LoginPage = (props) => {
               required
             />
           </div>
-          <button type='submit' disabled={!formValues.email || !formValues.passwordInput}>
-            Sign In
+          <button className='login-button' type='submit' disabled={!formValues.email || !formValues.passwordInput}>
+            Log In
           </button>
         </form>
       </div>
