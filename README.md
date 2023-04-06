@@ -6,7 +6,7 @@ The goal of this project is to create a functoning web based application using D
 - Our application will also have full CRUD for at least one of our models.
 
 ## ERD
-![](./assets/ERD.png)
+![](./assets/ERD.png| width=100px)
 
 ## Component Hierarchy Diagram
 ![](./assets/CHD.png)
