@@ -18,6 +18,14 @@ The goal of this project is to create a functoning web based application using D
 - Search bar to be able to search for different Cities and States 
 - Audio player that can play a mash-up of the artist(s) music when on the screen for there show.
 
+# The Finished Product of our MVP
+<img src="./assets/home.png" width=50% height=50%>
+<img src="./assets/venues.png" width=50% height=50%>
+<img src="./assets/venue.png" width=50% height=50%>
+<img src="./assets/event.png" width=50% height=50%>
+<img src="./assets/login.png" width=50% height=50%>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
