@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from pathlib import Path
 
 from datetime import timedelta
-
+import dj_database_url
 import os
 
 
@@ -25,13 +25,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-*9l!rksg2$zl2y(yy!9=f01bfxr83rizz%tuv=ja2_$cx+2!yv'
+# SECRET_KEY = 'django-insecure-*9l!rksg2$zl2y(yy!9=f01bfxr83rizz%tuv=ja2_$cx+2!yv'
+
+SECRET_KEY = os.environ.get('SECRET_KEY', '47hu08awhg234fr')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'RENDER' not in os.environ
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
+RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+if RENDER_EXTERNAL_HOSTNAME:    
+    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 # Application definition
 
@@ -112,15 +117,12 @@ WSGI_APPLICATION = 'tickit_django.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
+DATABASE_URL = 'tickit.backend'
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'tickit',
-        'USER': 'tickituser1',
-        'PASSWORD': 'tickit',
-        'HOST': 'localhost'
-    }
+    'default': dj_database_url.config(
+        conn_max_age=600,
+        conn_health_checks=True,
+    ),
 }
 
 
