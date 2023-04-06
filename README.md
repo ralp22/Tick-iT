@@ -17,7 +17,7 @@ The goal of this project is to create a functoning web based application using D
 
 ## Stretch-Goal
 - Search bar to be able to search for different Cities and States 
-- Audio player that can play a mas-up of the artist(s) music when on the screen for there show.
+- Audio player that can play a mash-up of the artist(s) music when on the screen for there show.
 
 # Getting Started with Create React App
 
