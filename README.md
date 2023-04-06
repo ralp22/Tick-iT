@@ -6,18 +6,25 @@ The goal of this project is to create a functoning web based application using D
 - Our application will also have full CRUD for at least one of our models.
 
 ## ERD
-![](./assets/ERD.png)
+<img src="./assets/ERD.png" width=60% height=60%>
 
 ## Component Hierarchy Diagram
-![](./assets/CHD.png)
+<img src="./assets/CHD.png" width=50% height=50%>
 
 ## Wireframes
-![](./assets/wireframe1.png)
-![](./assets/wireframe2.png)
+<img src="./assets/wireframe1.png" width=50% height=50%> <img src="./assets/wireframe2.png" width=45% height=45%>
 
 ## Stretch-Goal
 - Search bar to be able to search for different Cities and States 
 - Audio player that can play a mas-up of the artist(s) music when on the screen for there show.
+
+# The Finished Product of our MVP
+<img src="./assets/home.png" width=50% height=50%>
+<img src="./assets/venues.png" width=50% height=50%>
+<img src="./assets/venue.png" width=50% height=50%>
+<img src="./assets/event.png" width=50% height=50%>
+<img src="./assets/login.png" width=50% height=50%>
+
 
 # Getting Started with Create React App
 
