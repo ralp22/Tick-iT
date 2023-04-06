@@ -4,6 +4,7 @@
   height: 100vh;
   width: 100vw;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .event-page {
@@ -19,10 +20,48 @@
   align-items: center;
 }
 
-.card-img {
-  height: 20vh;
-  width: 400px;
-  object-fit: stretch;
+.event-shadow {
+  text-shadow: 0 0 10px #FFBD59;
+}
+
+.venue-events-img {
+  height: 7.5vh;
+  max-width: 15vw;
+  border: 1px solid white;
+  box-shadow: 0 0 10px #FFBD59;
+}
+
+.venue-events {
+  width: 90vw;
+  padding-top: 5%;
+}
+
+.venue-events-rows {
+  background: black;
+  font-family: "Arial";
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: white;
+  border: 2px solid #FFBD59;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2.5%;
+}
+
+.venue-events-rows:hover * {
+  color: #FFBD59;
+}
+
+.venue-event-card {
+  border: 2px solid #FFBD59;
+}
+
+.venue-event-card:hover *{
+  background:#0e0e0f;
 }
 
 .carousel-img {
@@ -34,7 +73,6 @@
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 7.5%;
   margin-top: 10%;
 }
 
@@ -42,6 +80,24 @@
   height: 20%;
   width: 30%;
   padding-bottom: 5%;
+  margin-right: 7vw; 
+  margin-left: 7vw;
+}
+
+.card-img {
+  height: 20vh;
+  width: 400px;
+  object-fit: stretch;
+  box-shadow: 0 2px 12px white;
+}
+
+.card-img:hover {
+  box-shadow: 0 2px 12px #FFBD59;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .banner {
@@ -49,6 +105,7 @@
   color: aliceblue;
   margin-top: -20px;
   background: linear-gradient(180deg, #000000 0%, #414141 100%);
+  box-shadow: 0 2px 12px white;
 }
 
 .venue-info {
@@ -93,13 +150,74 @@
   align-items: center;
 }
 
-.venue-backdrop {
+.event-backdrop {
   width: 100vw;
+}
+
+.event-details-container {
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: fit-content;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  text-shadow: 0 2px 12px #FFBD59;
+  line-height: 10%;
+}
+
+.venue-backdrop-header {
+  align-self: center;
+  height: 800px;
+  width: 80%;
 }
 
 .details-container {
   color: white;
   background-color: black;
-  border-radius: 2rem;
-  width: 40vw;
+  width: 100%;
+  height: fit-content;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  text-shadow: 0 2px 12px #FFBD59;
+  line-height: 10%;
+}
+
+.ticket-button {
+  border-radius: .25rem;
+  box-shadow: 0 2px 12px #FFBD59;
+  margin: 10px;
+  background: black;
+  color: white;
+}
+
+.ticket-button:hover {
+  transform: scale(1.25);
+  background: #FFBD59;
+  color: black;
+  cursor: pointer;
+}
+
+.login-form-container {
+  margin-top: 5%;
+  transform: scale(1.5)
+}
+
+.email-label,.password-label {
+  font-family: 'Inter';
+  color: white;
+  text-shadow: 0 2px 12px #FFBD59;
+}
+
+.login-button {
+  background: #FFBD59;
+  box-shadow: 0 2px 6px #FFBD59;
+  color: white;
+  font-weight: bold;
+}
+
+.login-button:hover {
+  cursor: pointer;
+  
 }

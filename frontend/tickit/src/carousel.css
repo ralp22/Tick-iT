@@ -11,10 +11,11 @@
     display: inline-flex;
     align-items: center; 
     justify-content: center;
-    height: 500px;
+    height: auto;
     width: auto;
     background-color: #FFBD59;
     color: #fff;
+    padding-top: .5%;
 }
 
 .indicators {
